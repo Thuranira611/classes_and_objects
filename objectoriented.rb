@@ -1,17 +1,21 @@
 class Book
-attr_accessor :title,:author,:pages
+attr_accessor :title,:author,:pages,:year
+def initialize(title,author,pages,year)
+@title = title
+@author =author
+@pages = pages
+@year = year
 end
-book1 = Book.new()
-book1.title = "live your life" 
-book1.pages = 500
+end
+book1 = Book.new("Never give up","Thuranira611",500,2023)
+
 puts book1.title
+puts book1.author
 puts book1.pages
+puts book1.year
 
-book2 = Book.new()
-book2.title = "Never give up in life"
-book2.author = "Thuranira611"
-book2.pages = 700
-
+book2 = Book.new("Be humble","james",400,2022)
 puts book2.title
 puts book2.author
 puts book2.pages
+puts book2.year
