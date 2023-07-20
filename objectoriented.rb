@@ -25,3 +25,14 @@ if book1.pages<book2.pages
 else
  puts "book1 has more pages than book2, " +book1.pages.to_s
 end
+
+class KenyanBook < Book
+    attr_accessor :translated
+end
+book3 = KenyanBook.new( "Love is a good thing","james",670,2024) 
+book3.translated = "Mapenzi ni kitu kizuri sana"
+puts book3.title
+puts book3.translated
+puts book3.author
+puts book3.pages
+puts book3.year
