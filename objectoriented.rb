@@ -19,3 +19,9 @@ puts book2.title
 puts book2.author
 puts book2.pages
 puts book2.year
+
+if book1.pages<book2.pages
+  puts "book2 has more pages than book1" +book2.pages.to_s
+else
+ puts "book1 has more pages than book2, " +book1.pages.to_s
+end
